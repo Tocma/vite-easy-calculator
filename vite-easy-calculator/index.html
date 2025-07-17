@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>簡易計算機</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./src/main.ts"></script>
+</head>
+<body>
+  <h1>簡易計算機</h1>
+  <input type="number" id="first-input" placeholder="数値1">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">×</option>
+    <option value="/">÷</option>
+  </select>
+  <input type="number" id="second-input" placeholder="数値2">
+  <button id="calculate">計算</button>
+  <h2>結果: <span id="result">?</span></h2>
+  <button id="clear_history">履歴削除</button>
+  <ul id="history"></ul>
+</body>
+</html>
